@@ -18,7 +18,7 @@ const fetchStocks = async () => {
       refreshInterval: Math.floor(Math.random() * (5 - 1 + 1)) + 1,
       currentPrice: ticker.day.open, // Initial value
     }));
-
+//
     fs.writeFileSync(dataFilePath, JSON.stringify(stocks));
     console.log('Stock data fetched and stored.');
   } catch (error) {
